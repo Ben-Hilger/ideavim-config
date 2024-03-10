@@ -27,6 +27,23 @@ set idearefactormode=keep
 
 """ Mappings --------------------------------
 
+""" [M]ultiple Cursor Plugin Remaps
+
+" Next [W]hole Occurance
+map <C-w> <Plug>NextWholeOccurence
+
+
+" [N]ext Occurance
+map <C-n> <Plug>NextOccurrence
+
+" [S]kip Occurance
+map <C-s> <Plug>SkipOccurrence
+
+" [R]emove Occurance
+map <C-r> <Plug>RemoveOccurrence
+
+""" Misc Remaps
+
 map <leader>z <Action>(ToggleDistractionFreeMode)
 
 map <leader>r <Action>(RenameElement)
@@ -35,8 +52,8 @@ map <leader>r <Action>(RenameElement)
 
 """ [L]ine Actions
 
-map <leader>lu <Action>(MoveLineUp)
-map <leader>ld <Action>(MoveLineDown)
+map <C-u> <Action>(MoveLineUp)
+map <C-d> <Action>(MoveLineDown)
 
 "" Open [F]ile [S]tructure
 
