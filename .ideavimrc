@@ -1,0 +1,98 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+
+set textobj-entire
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>r <Action>(RenameElement)
+
+""" f = [F]ile structure 
+
+""" [L]ine Actions
+
+map <leader>lu <Action>(MoveLineUp)
+map <leader>ld <Action>(MoveLineDown)
+
+"" Open [F]ile [S]tructure
+
+map <leader>fs <Action>(FileStructurePopup) 
+
+""" [S]earch Actions
+
+map <leader>sf <Action>(SearchEverywhere)
+map <leader>si <Action>(FindInPath)
+
+""" Running [A]pplication Actions
+
+map <leader>ad <Action>(Debug)
+map <leader>ar <Action>(Run)
+map <leader>as <Action>(Stop)
+
+""" [D]ebug Actions
+
+map <leader>db <Action>(ToggleLineBreakpoint)
+
+""" t = gi[T] actions
+
+" Go to gi[t] [b]ranches
+map <leader>tb <Action>(Git.Branches)
+
+" gi[t] [f]etch
+map <leader>tf <Action>(Git.Fetch)
+
+" gi[t] [p]ull
+map <leader>tp <Action>(Git.Pull)
+
+" gi[t] stash
+map <leader>ts <Action>(Git.Stash)
+
+" open gi[t] [c]ommit tree windiow
+map <leader>tc <Action>(ActivateCommitToolWindow)
+
+" open gi[t] [d]iff window
+map <leader>td <Action>(Compare.SameVersion)
+
+""" g = [G]oto Actions
+
+" [G]oto declaration
+map <leader>gd <Action>(GotoDeclaration)
+
+" [G]oto next error
+map <leader>ge <Action>(GotoNextError)
+
+" [G]oto file in [p]roject view
+map <leader>gp <Action>(SelectInProjectView)
+
+""" Navigation Actions
+
+map <leader>h <Action>(PreviousTab)
+map <leader>l <Action>(NextTab)
+
+""" [V]ue Actions
+
+map <leader>vc <Action>(CreateVueSingleFileComp)
