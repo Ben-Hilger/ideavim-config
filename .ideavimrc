@@ -113,3 +113,8 @@ map <leader>l <Action>(NextTab)
 """ [V]ue Actions
 
 map <leader>vc <Action>(CreateVueSingleFileComp)
+
+""" [C]opy Actions
+
+" [C]opy [F]ile
+map <leader>cf <Action>(CopyElement)
